@@ -1,0 +1,9 @@
+version: "2"
+services:
+  dockerwithphp:
+      container_name: dockerwithphp-dev
+      build: .
+      ports:
+        - "80:80"
+      extra_hosts:
+        - "www.demo.local.tw:127.0.0.1"
